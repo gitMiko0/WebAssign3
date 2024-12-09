@@ -42,6 +42,7 @@ DOMAIN: https://assign3forwebdevelopment.glitch.me
 [/api/driverResults/piastri/2023](https://assign3forwebdevelopment.glitch.me/api/driverResults/piastri/2023) - this appears to be a mistake on the assignment document as "piastre"
 
 - returns results for a specific driver reference in a specific season
+  
 [/api/driverResults/piastri/2002](https://assign3forwebdevelopment.glitch.me/api/driverResults/piastri/2002) - checks error-handling for invalid year
 
 [/api/races/season/2023](https://assign3forwebdevelopment.glitch.me/api/races/season/2023) - returns all races in a given season
