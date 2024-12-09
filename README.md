@@ -32,9 +32,9 @@ DOMAIN: https://assign3forwebdevelopment.glitch.me
 
 [/api/drivers/randy](https://assign3forwebdevelopment.glitch.me/api/drivers/randy)
 
-[/api/driverResults/piastre/2023](https://assign3forwebdevelopment.glitch.me/api/driverResults/piastre/2023)
+[/api/driverResults/piastri/2023](https://assign3forwebdevelopment.glitch.me/api/driverResults/piastri/2023) - this appears to be a mistake on the assignment document as "piastre"
 
-[/api/driverResults/piastre/2002](https://assign3forwebdevelopment.glitch.me/api/driverResults/piastre/2002)
+[/api/driverResults/piastri/2002](https://assign3forwebdevelopment.glitch.me/api/driverResults/piastri/2002)
 
 [/api/races/season/2023](https://assign3forwebdevelopment.glitch.me/api/races/season/2023)
 
