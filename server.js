@@ -8,7 +8,7 @@ const races = require('./races.json');
 const drivers = require('./drivers.json');
 const constructors = require('./constructors.json');
 const results = require('./results.json');
-// Following file is empty? (not functional when included)
+// Following file is empty? (not functional when included, the file is unusued on the requirements either way)
 //const qualifying = require('./qualifying.json'); 
 
 // Start Server
@@ -75,7 +75,7 @@ app.get('/api/constructors', (req, res) => {
 });
 
 
-// Given reference
+// Handle given constructor reference
 app.get('/api/constructors/:ref', (req, res) => {
   const ref = req.params.ref.toLowerCase();
   const constructor = constructors.find(c => c.constructorRef.toLowerCase() === ref);
@@ -92,7 +92,7 @@ app.get('/api/drivers', (req, res) => {
 });
 
 app.get('/api/drivers/:ref', (req, res) => {
-  const driverRef = req.params.ref.toLowerCase(); // Extract and normalize ref
+  const driverRef = req.params.ref.toLowerCase(); // Extract and transform ref
   const driver = drivers.find(d => d.driverRef.toLowerCase() === driverRef);
   
   if (driver) {
@@ -127,8 +127,8 @@ app.get('/api/results/race/:id', (req, res) => {
 });
 
 app.get('/api/driverResults/:ref/:year', (req, res) => {
-  const driverRef = req.params.ref.toLowerCase(); // Extract and normalize driverRef
-  const year = parseInt(req.params.year, 10); // Parse year as an integer
+  const driverRef = req.params.ref.toLowerCase(); // Extract and transform driverRef
+  const year = parseInt(req.params.year, 10); // Parse year as an integer value
 
   // Validate year input
   if (isNaN(year)) {
