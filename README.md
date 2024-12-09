@@ -11,48 +11,48 @@ This is made possible using glitch.com as the hosting platform.
 
 DOMAIN: https://assign3forwebdevelopment.glitch.me
 
-[/api/circuits](https://assign3forwebdevelopment.glitch.me/api/circuits)
+[/api/circuits](https://assign3forwebdevelopment.glitch.me/api/circuits) - returns all circuits
 
-[/api/circuits/1](https://assign3forwebdevelopment.glitch.me/api/circuits/1)
+[/api/circuits/1](https://assign3forwebdevelopment.glitch.me/api/circuits/1) - returns the circuit details of specific id
 
-[/api/constructors](https://assign3forwebdevelopment.glitch.me/api/constructors)
+[/api/constructors](https://assign3forwebdevelopment.glitch.me/api/constructors) - returns all constructors
 
-[/api/constructors/mclaren](https://assign3forwebdevelopment.glitch.me/api/constructors/mclaren)
+[/api/constructors/mclaren](https://assign3forwebdevelopment.glitch.me/api/constructors/mclaren) - returns the constructor details of the given reference
 
-[/api/coNSTruCTors/mclaren](https://assign3forwebdevelopment.glitch.me/api/coNSTruCTors/mclaren)
+[/api/coNSTruCTors/mclaren](https://assign3forwebdevelopment.glitch.me/api/coNSTruCTors/mclaren) - checks case insensitivity of the previous test
 
-[/api/constructors/javascript](https://assign3forwebdevelopment.glitch.me/api/constructors/javascript)
+[/api/constructors/javascript](https://assign3forwebdevelopment.glitch.me/api/constructors/javascript) - checks unfound constructor ref error-handling
 
-[/api/constructorResults/mclaren/2023](https://assign3forwebdevelopment.glitch.me/api/constructorResults/mclaren/2023)
+[/api/constructorResults/mclaren/2023](https://assign3forwebdevelopment.glitch.me/api/constructorResults/mclaren/2023) - checks results for a given ref and season
 
-[/api/constructorResults/MERCEDES/2020](https://assign3forwebdevelopment.glitch.me/api/constructorResults/MERCEDES/2020)
+[/api/constructorResults/MERCEDES/2020](https://assign3forwebdevelopment.glitch.me/api/constructorResults/MERCEDES/2020) -checks case insensitivity and correctness of previous test
 
-[/api/constructorResults/mclaren/2040](https://assign3forwebdevelopment.glitch.me/api/constructorResults/mclaren/2040)
+[/api/constructorResults/mclaren/2040](https://assign3forwebdevelopment.glitch.me/api/constructorResults/mclaren/2040) - checks error-handling for invalid year
 
-[/api/constructorResults/comp3612/2023](https://assign3forwebdevelopment.glitch.me/api/constructorResults/comp3612/2023)
+[/api/constructorResults/comp3612/2023](https://assign3forwebdevelopment.glitch.me/api/constructorResults/comp3612/2023) - checks error-handling for invalid constructor reference
 
-[/api/drivers](https://assign3forwebdevelopment.glitch.me/api/drivers)
+[/api/drivers](https://assign3forwebdevelopment.glitch.me/api/drivers) - returns all drivers
 
-[/api/drivers/hamilton](https://assign3forwebdevelopment.glitch.me/api/drivers/hamilton)
+[/api/drivers/hamilton](https://assign3forwebdevelopment.glitch.me/api/drivers/hamilton) - returns specific driver details using reference
 
-[/api/drivers/HAMilton](https://assign3forwebdevelopment.glitch.me/api/drivers/HAMilton)
+[/api/drivers/HAMilton](https://assign3forwebdevelopment.glitch.me/api/drivers/HAMilton) - checks case insensitivity of previous test
 
-[/api/drivers/randy](https://assign3forwebdevelopment.glitch.me/api/drivers/randy)
+[/api/drivers/randy](https://assign3forwebdevelopment.glitch.me/api/drivers/randy) - checks error handling for unfound driver reference
 
 [/api/driverResults/piastri/2023](https://assign3forwebdevelopment.glitch.me/api/driverResults/piastri/2023) - this appears to be a mistake on the assignment document as "piastre"
+- returns results for a specific driver reference in a specific season
+[/api/driverResults/piastri/2002](https://assign3forwebdevelopment.glitch.me/api/driverResults/piastri/2002) - checks error-handling for invalid year
 
-[/api/driverResults/piastri/2002](https://assign3forwebdevelopment.glitch.me/api/driverResults/piastri/2002)
+[/api/races/season/2023](https://assign3forwebdevelopment.glitch.me/api/races/season/2023) - returns all races in a given season
 
-[/api/races/season/2023](https://assign3forwebdevelopment.glitch.me/api/races/season/2023)
+[/api/races/seasoning/2023](https://assign3forwebdevelopment.glitch.me/api/races/seasoning/2023) - checks error-handling for invalid pathname
 
-[/api/races/seasoning/2023](https://assign3forwebdevelopment.glitch.me/api/races/seasoning/2023)
+[/api/races/season/2032](https://assign3forwebdevelopment.glitch.me/api/races/season/2032) - checks error-handling for invalid season
 
-[/api/races/season/2032](https://assign3forwebdevelopment.glitch.me/api/races/season/2032)
+[/api/results/race/1100](https://assign3forwebdevelopment.glitch.me/api/results/race/1100) - returns a race resulsts for a specific season
 
-[/api/results/race/1100](https://assign3forwebdevelopment.glitch.me/api/results/race/1100)
+[/api/results/race/1756348576](https://assign3forwebdevelopment.glitch.me/api/results/race/1756348576) - checks error-handling for invalid id
 
-[/api/results/race/1756348576](https://assign3forwebdevelopment.glitch.me/api/results/race/1756348576)
+[/api/results/season/2023](https://assign3forwebdevelopment.glitch.me/api/results/season/2023) - returns all race results from a specified season
 
-[/api/results/season/2023](https://assign3forwebdevelopment.glitch.me/api/results/season/2023)
-
-[/api/results/season/2034](https://assign3forwebdevelopment.glitch.me/api/results/season/2034)
+[/api/results/season/2034](https://assign3forwebdevelopment.glitch.me/api/results/season/2034) - checks error-handling for invalid season
