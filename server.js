@@ -49,29 +49,26 @@ app.get('/api/races', (req, res) => {
 
 
 // handles request for races in a specific season
+// Valid route for /api/races/season/:year
 app.get('/api/races/season/:year', (req, res) => {
-  // If the year parameter is invalid (not a number), return a 400 error
   const yearRef = parseInt(req.params.year, 10);
-  
   if (isNaN(yearRef)) {
-    return res.status(400).json({ error: 'Invalid year parameter. Please provide a valid year.' });
+    return res.status(400).json({ error: 'Invalid year parameter.' });
   }
 
-  // Filter the races based on the given year
   const season = races.filter(y => y.year === yearRef);
-
   if (season.length === 0) {
-    return res.status(404).json({ error: `No races found for the '${yearRef}' season.` });
+    return res.status(404).json({ error: `No races found for the '${yearRef}' season` });
   }
 
-  // Return the races data if found
   res.json(season);
 });
 
-// catch-all for incorrect paths (for anything that isn't /season/:year)
-// handles races/seasoning
-app.use((req, res) => {
-  return res.status(400).json({ error: 'Invalid path. The path should start with "/api/races/season/:year".' });
+// Catch all other invalid season-like paths (like /seasoning, /seasons, etc.)
+app.get('/api/races/season*', (req, res) => {
+  return res.status(400).json({
+    error: 'Invalid path. Did you mean "/season/:year"?',
+  });
 });
 
 
