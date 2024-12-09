@@ -1,4 +1,10 @@
-# WebAssign3
+This repository implements Assignment 3 for COMP 3612 - Web Development for Computer Science
+
+Using Node.js, this implementation provides API functionality with several endpoints (as listed below) that shares data from the 
+.json files stored in the repository, allowing for retrieval of specific data through customizable paths that are 
+case insensitive. This is made possible using glitch.com as the hosting platform.
+
+
 
 **Test Links**
 
