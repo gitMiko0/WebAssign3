@@ -23,10 +23,12 @@ app.get('/', (req, res) => {
 
 
 // Circuits API
+// handle request for all circuits in the database
 app.get('/api/circuits', (req, res) => {
   res.json(circuits);
 });
 
+//handle request for a specific circuit using its id
 app.get('/api/circuits/:id', (req, res) => {
   const circuitId = parseInt(req.params.id, 10);                 // Convert to integer
   const circuit = circuits.find(c => c.circuitId === circuitId); // Compare as integers
@@ -40,22 +42,13 @@ app.get('/api/circuits/:id', (req, res) => {
 
 
 // Races API
+// handle request for all races in the database
 app.get('/api/races', (req, res) => {
   res.json(races);
 });
 
 
-// Given the id, races/'id'
-app.get('/api/races/id/:id', (req, res) => {
-  const raceId = parseInt(req.params.id, 10); // Convert to number, 10 refers to number system, ie. decimal
-  const race = races.find(r => r.id === raceId); // Compare as numbers
-  if (race) {
-    res.json(race);
-  } else {
-    res.status(404).json({ error: 'Race not found' });
-  }
-});
-
+// handle request for races of a specific season
 app.get('/api/races/season/:year', (req, res) => {
   const yearRef = parseInt(req.params.year, 10);
   // Use filter() to find all races that match the given year, find only returns one instance
@@ -70,6 +63,7 @@ app.get('/api/races/season/:year', (req, res) => {
 
 
 // Constructors APIs
+// handle request for all constructors
 app.get('/api/constructors', (req, res) => {
   res.json(constructors);
 });
@@ -91,6 +85,7 @@ app.get('/api/drivers', (req, res) => {
   res.json(drivers);
 });
 
+// handle specific driver request using a driverRef
 app.get('/api/drivers/:ref', (req, res) => {
   const driverRef = req.params.ref.toLowerCase(); // Extract and transform ref
   const driver = drivers.find(d => d.driverRef.toLowerCase() === driverRef);
@@ -104,12 +99,12 @@ app.get('/api/drivers/:ref', (req, res) => {
 
 
 // Results API
-
+// handle display all results request
 app.get('/api/results', (req, res) => {
   res.json(results);
 });
 
-
+// handle request for results for a specific race
 app.get('/api/results/race/:id', (req, res) => {
   const raceId = parseInt(req.params.id, 10); // Convert the race ID to an integer
   if (isNaN(raceId)) {
@@ -126,6 +121,7 @@ app.get('/api/results/race/:id', (req, res) => {
   }
 });
 
+// handle driver results with a given driverRef and season
 app.get('/api/driverResults/:ref/:year', (req, res) => {
   const driverRef = req.params.ref.toLowerCase(); // Extract and transform driverRef
   const year = parseInt(req.params.year, 10); // Parse year as an integer value
@@ -150,6 +146,7 @@ app.get('/api/driverResults/:ref/:year', (req, res) => {
   }
 });
 
+// handle constructor results with a given consRef and season
 app.get('/api/constructorResults/:ref/:year', (req, res) => {
   const constructorRef = req.params.ref.toLowerCase(); // Convert to lowercase for case-insensitive matching
   const year = parseInt(req.params.year, 10); // Parse the year to an integer
@@ -174,7 +171,7 @@ app.get('/api/constructorResults/:ref/:year', (req, res) => {
   }
 });
 
-
+// handle results with a specific season request
 app.get('/api/results/season/:year', (req, res) => {
   const year = parseInt(req.params.year, 10); // Parse the year to an integer
 
