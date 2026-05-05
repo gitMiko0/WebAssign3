@@ -9,7 +9,7 @@ This is made possible using glitch.com as the hosting platform.
 
 **Test Links**
 
-DOMAIN: https://assign3forwebdevelopment.glitch.me
+DOMAIN: https://f1backend-black.vercel.app/
 
 [/api/circuits](https://assign3forwebdevelopment.glitch.me/api/circuits) - returns all circuits
 
