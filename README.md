@@ -11,48 +11,48 @@ This is made possible using glitch.com as the hosting platform.
 
 DOMAIN: https://f1backend-black.vercel.app/
 
-[/api/circuits](https://assign3forwebdevelopment.glitch.me/api/circuits) - returns all circuits
+[/api/circuits](https://f1backend-black.vercel.app//api/circuits) - returns all circuits
 
-[/api/circuits/1](https://assign3forwebdevelopment.glitch.me/api/circuits/1) - returns the circuit details of specific id
+[/api/circuits/1](https://f1backend-black.vercel.app//api/circuits/1) - returns the circuit details of specific id
 
-[/api/constructors](https://assign3forwebdevelopment.glitch.me/api/constructors) - returns all constructors
+[/api/constructors](https://f1backend-black.vercel.app//api/constructors) - returns all constructors
 
-[/api/constructors/mclaren](https://assign3forwebdevelopment.glitch.me/api/constructors/mclaren) - returns the constructor details of the given reference
+[/api/constructors/mclaren](https://f1backend-black.vercel.app//api/constructors/mclaren) - returns the constructor details of the given reference
 
-[/api/coNSTruCTors/mclaren](https://assign3forwebdevelopment.glitch.me/api/coNSTruCTors/mclaren) - checks case insensitivity of the previous test
+[/api/coNSTruCTors/mclaren](https://f1backend-black.vercel.app//api/coNSTruCTors/mclaren) - checks case insensitivity of the previous test
 
-[/api/constructors/javascript](https://assign3forwebdevelopment.glitch.me/api/constructors/javascript) - checks unfound constructor ref error-handling
+[/api/constructors/javascript](https://f1backend-black.vercel.app//api/constructors/javascript) - checks unfound constructor ref error-handling
 
-[/api/constructorResults/mclaren/2023](https://assign3forwebdevelopment.glitch.me/api/constructorResults/mclaren/2023) - checks results for a given ref and season
+[/api/constructorResults/mclaren/2023](https://f1backend-black.vercel.app//api/constructorResults/mclaren/2023) - checks results for a given ref and season
 
-[/api/constructorResults/MERCEDES/2020](https://assign3forwebdevelopment.glitch.me/api/constructorResults/MERCEDES/2020) -checks case insensitivity and correctness of previous test
+[/api/constructorResults/MERCEDES/2020](https://f1backend-black.vercel.app//api/constructorResults/MERCEDES/2020) -checks case insensitivity and correctness of previous test
 
-[/api/constructorResults/mclaren/2040](https://assign3forwebdevelopment.glitch.me/api/constructorResults/mclaren/2040) - checks error-handling for invalid year
+[/api/constructorResults/mclaren/2040](https://f1backend-black.vercel.app//api/constructorResults/mclaren/2040) - checks error-handling for invalid year
 
-[/api/constructorResults/comp3612/2023](https://assign3forwebdevelopment.glitch.me/api/constructorResults/comp3612/2023) - checks error-handling for invalid constructor reference
+[/api/constructorResults/comp3612/2023](https://f1backend-black.vercel.app//api/constructorResults/comp3612/2023) - checks error-handling for invalid constructor reference
 
-[/api/drivers](https://assign3forwebdevelopment.glitch.me/api/drivers) - returns all drivers
+[/api/drivers](https://f1backend-black.vercel.app//api/drivers) - returns all drivers
 
-[/api/drivers/hamilton](https://assign3forwebdevelopment.glitch.me/api/drivers/hamilton) - returns specific driver details using reference
+[/api/drivers/hamilton](https://f1backend-black.vercel.app//api/drivers/hamilton) - returns specific driver details using reference
 
-[/api/drivers/HAMilton](https://assign3forwebdevelopment.glitch.me/api/drivers/HAMilton) - checks case insensitivity of previous test
+[/api/drivers/HAMilton](https://f1backend-black.vercel.app//api/drivers/HAMilton) - checks case insensitivity of previous test
 
-[/api/drivers/randy](https://assign3forwebdevelopment.glitch.me/api/drivers/randy) - checks error handling for unfound driver reference
+[/api/drivers/randy](https://f1backend-black.vercel.app//api/drivers/randy) - checks error handling for unfound driver reference
 
-[/api/driverResults/piastri/2023](https://assign3forwebdevelopment.glitch.me/api/driverResults/piastri/2023) - returns results for a specific driver reference in a specific season (this appears to be a mistake on the assignment document as "piastre")
+[/api/driverResults/piastri/2023](https://f1backend-black.vercel.app//api/driverResults/piastri/2023) - returns results for a specific driver reference in a specific season (this appears to be a mistake on the assignment document as "piastre")
   
-[/api/driverResults/piastri/2002](https://assign3forwebdevelopment.glitch.me/api/driverResults/piastri/2002) - checks error-handling for invalid year
+[/api/driverResults/piastri/2002](https://f1backend-black.vercel.app//api/driverResults/piastri/2002) - checks error-handling for invalid year
 
-[/api/races/season/2023](https://assign3forwebdevelopment.glitch.me/api/races/season/2023) - returns all races in a given season
+[/api/races/season/2023](https://f1backend-black.vercel.app//api/races/season/2023) - returns all races in a given season
 
-[/api/races/seasoning/2023](https://assign3forwebdevelopment.glitch.me/api/races/seasoning/2023) - checks error-handling for invalid pathname
+[/api/races/seasoning/2023](https://f1backend-black.vercel.app//api/races/seasoning/2023) - checks error-handling for invalid pathname
 
-[/api/races/season/2032](https://assign3forwebdevelopment.glitch.me/api/races/season/2032) - checks error-handling for invalid season
+[/api/races/season/2032](https://f1backend-black.vercel.app//api/races/season/2032) - checks error-handling for invalid season
 
-[/api/results/race/1100](https://assign3forwebdevelopment.glitch.me/api/results/race/1100) - returns a race resulsts for a specific season
+[/api/results/race/1100](https://f1backend-black.vercel.app//api/results/race/1100) - returns a race resulsts for a specific season
 
-[/api/results/race/1756348576](https://assign3forwebdevelopment.glitch.me/api/results/race/1756348576) - checks error-handling for invalid id
+[/api/results/race/1756348576](https://f1backend-black.vercel.app//api/results/race/1756348576) - checks error-handling for invalid id
 
-[/api/results/season/2023](https://assign3forwebdevelopment.glitch.me/api/results/season/2023) - returns all race results from a specified season
+[/api/results/season/2023](https://f1backend-black.vercel.app//api/results/season/2023) - returns all race results from a specified season
 
-[/api/results/season/2034](https://assign3forwebdevelopment.glitch.me/api/results/season/2034) - checks error-handling for invalid season
+[/api/results/season/2034](https://f1backend-black.vercel.app//api/results/season/2034) - checks error-handling for invalid season
