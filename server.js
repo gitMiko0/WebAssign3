@@ -2,15 +2,18 @@ const express = require('express');
 const cors = require('cors'); 
 const app = express();
 
-// Use CORS for ALL routes, explicit configuration for Vercel
-app.use(cors({
-  origin: '*',
-  methods: ['GET'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
+// Manual CORS middleware: No dependencies required
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    
+    if (req.method === 'OPTIONS') {
+        return res.status(200).end();
+    }
+    next();
+});
 
-// Add this to handle OPTIONS requests (pre-flight)
-app.options('*', cors());
 // Load JSON data sources
 const circuits = require('./circuits.json');
 const races = require('./races.json');
