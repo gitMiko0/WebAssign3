@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000; // dynamic and local
+const cors = require('cors');
 
 // Load JSON data sources
 const circuits = require('./circuits.json');
@@ -10,6 +11,11 @@ const constructors = require('./constructors.json');
 const results = require('./results.json');
 // Following file is empty? (not functional when included, the file is unusued on the requirements either way)
 //const qualifying = require('./qualifying.json'); 
+
+// Enable CORS for all routes (Must be placed before your routes)
+app.use(cors({
+  origin: '*' // This allows requests from any domain (like your github.io). 
+}));
 
 // Start Server
 app.listen(port, () => {
