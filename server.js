@@ -1,7 +1,16 @@
 const express = require('express');
+const cors = require('cors'); 
 const app = express();
-const port = process.env.PORT || 3000; // dynamic and local
 
+// Use CORS for ALL routes, explicit configuration for Vercel
+app.use(cors({
+  origin: '*',
+  methods: ['GET'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
+// Add this to handle OPTIONS requests (pre-flight)
+app.options('*', cors());
 // Load JSON data sources
 const circuits = require('./circuits.json');
 const races = require('./races.json');
