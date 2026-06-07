@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000; // dynamic and local
+const cors = require('cors');
 
 // Load JSON data sources
 const circuits = require('./circuits.json');
@@ -15,6 +16,12 @@ const results = require('./results.json');
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+app.use(cors({
+  origin: 'https://gitmiko0.github.io', // Explicitly allow your GitHub Pages frontend
+  methods: ['GET'],
+  allowedHeaders: ['Content-Type']
+}));
 
 // Default Route, no data request
 app.get('/', (req, res) => {
